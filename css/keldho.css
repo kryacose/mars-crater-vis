@@ -1,0 +1,86 @@
+.myContainer {
+  margin: auto;
+  width: 1440px;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    /* "header header header header header header"
+    "cp svg svg svg svg svg"
+    "exp svg svg svg svg svg"; */
+    "header  exp"
+    "svg svg";
+  gap: 10px;
+  padding: 10px;
+}
+
+#heading_div {
+  width: 500px;
+  padding: 20px !important;
+  grid-area: header;
+}
+#controlpanel_div {
+  display: none;
+  grid-area: cp;
+}
+#explanation_div {
+  grid-area: exp;
+}
+#svg_div {
+  /* width: 900px; */
+  grid-area: svg;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 575px;
+
+  background-color: white;
+  border-radius: 5px;
+}
+
+.stroke {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+
+.fill {
+  fill: #000;
+  stroke: none;
+}
+
+.graticule {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 0.5px;
+}
+
+.line:hover {
+  stroke-width: 5px;
+  stroke: black;
+}
+
+.selected_crater_line {
+  stroke-width: 5px;
+  stroke: black;
+}
+
+#tooltip {
+  position: absolute;
+  /* text-align: center; */
+  padding: 8px 8px;
+  font: 12px sans-serif;
+  line-height: 1.5;
+  background: white;
+  border: 2px solid black;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.selected_ellipse {
+  fill: red !important;
+}
+.ellipse {
+  fill: rgba(0, 0, 0, 0);
+}
