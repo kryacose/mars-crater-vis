@@ -7,7 +7,7 @@
 
 ## Dataset:
 
-I have used the **Mars Crater Study Dataset** from Kaggle for this visualization ([link](https://www.kaggle.com/datasets/codebreaker619/mars-crater-study-dataset)).
+**Mars Crater Study Dataset** from Kaggle ([link](https://www.kaggle.com/datasets/codebreaker619/mars-crater-study-dataset)).
 
 ## Description:
 
